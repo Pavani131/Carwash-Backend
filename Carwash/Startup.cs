@@ -40,6 +40,7 @@ namespace Carwash
             services.AddTransient<IPackage, ImpPackage>();
             services.AddTransient<ICardetails, ImpCardetails>(); 
             services.AddTransient<IAdmin, ImpAdmin>();
+            services.AddTransient<IOrderdetails, ImpOrderdetails>();
 
             services.AddCors(option => option.AddPolicy("MyPolicy", ApplicationBuilder =>
                {

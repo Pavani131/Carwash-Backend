@@ -53,7 +53,7 @@ namespace Carwash.Controllers
                 return BadRequest();
             }
         }
-        [HttpPut]
+        [HttpPut("{Id}")]
         public async Task<ActionResult> Update(int Id, Package package)
         {
             var packages = await _package.Update(Id, package);

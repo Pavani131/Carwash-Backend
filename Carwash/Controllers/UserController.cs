@@ -65,7 +65,7 @@ namespace Carwash.Controllers
                 return BadRequest();
             }
         }
-        [HttpPut]
+        [HttpPut("{Id}")]
         public async Task<ActionResult> UpdateUser(int Id, User user)
         {
             var users = await _user.UpdateUser(Id, user);
